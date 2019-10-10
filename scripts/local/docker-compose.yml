@@ -97,6 +97,8 @@ services:
 
   storageadapter:
     image: azureiotpcs/pcs-storage-adapter-dotnet:testing
+    ports:
+      - "8081:9022"
     environment:
       - PCS_KEYVAULT_NAME
       - PCS_AAD_APPID
